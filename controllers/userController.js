@@ -46,7 +46,7 @@ class UserController {
             if(result !=null){
                 if(result.email == email && result.password == password){
                     // res.send(`<h1>Dashboard ----${result}</h1>`)// res.send("<h1>Login sucess</h1>")
-                    res.redirect('/login')
+                    res.redirect('/index')
                 }else{
                 res.send("<h1>Email or Password is not vaild</h1>")
             }
