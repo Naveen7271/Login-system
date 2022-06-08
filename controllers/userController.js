@@ -28,7 +28,7 @@ class UserController {
             number:req.body.number,
         })
         await doc.save()
-        res.redirect('/login')
+        res.redirect('/index')
 
     } catch(error){ 
         console.log(error)
@@ -36,7 +36,7 @@ class UserController {
     }
 }
     static login =(req, res) =>{
-        res.render("login")
+        res.render("index")
     }
     static verifyLogin = async (req, res) =>{
         try{
