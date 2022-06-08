@@ -13,8 +13,8 @@ router.post('/registration', UserController.createUserDoc)
 router.get('/smereg', UserController.smereg)       //for sme
 router.post('/smereg', UserController.createUserDoc)
 
-router.get('/login', UserController.login)
-router.post('/login', UserController.verifyLogin)
+router.get('/index', UserController.login)
+router.post('/index', UserController.verifyLogin)
 router.get('/logout', UserController.logout)
 
 
